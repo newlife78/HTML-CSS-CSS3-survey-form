@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Programming Course Survey Form</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1 id="title">Programming Course Survey Form</h1>
+            <p id="description">Thank you for helping us improve future programming courses</p>
+        </header>
+        <form id="survey-form">
+            <div class="group-form">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" class="control-form" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="group-form">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" class="control-form" name="email" placeholder="name@example.com" required />
+            </div>
+            <div class="group-form">
+                <label id="number-label" for="number">Age<span class="help-tip">(optional)</span></label>
+                <input id="number" type="number" class="control-form" min="18" max="100" name="age"
+                    placeholder="Enter your age" />
+            </div>
+            <div class="group-form">
+                <p>Which option is more appropriated to describe your current role?</p>
+                <select id="dropdown" class="control-form" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="recent-graduate">Recent Graduate</option>
+                    <option value="full-job">Full Time Job</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="preferNA">Prefer not to anwser</option>
+                    <option value="other-role">Other</option>
+                </select>
+            </div>
+            <div class="group-form">
+                <p>Would you recommend this Programming Course to a friend?</p>
+                <label>
+                    <input type="radio" class="input-radio" value="certainly" name="user-recommend"
+                        checked />Certainly</label>
+                <label>
+                    <input type="radio" class="input-radio" value="maybe" name="user-recommend" checked />Maybe</label>
+                <label>
+                    <input type="radio" class="input-radio" value="not-sure" name="user-recommend" checked />Not
+                    sure</label>
+                <label>
+                    <input type="radio" class="input-radio" value="no" name="user-recommend" checked />No</label>
+            </div>
+            <div class="group-form">
+                <p>What is the main reason for you to enroll this course?</p>
+                <select id="dropdown-reason" class="control-form" name="enroll-reason" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="new-skills">Learn new skills</option>
+                    <option value="improve-skills">Improve current skills</option>
+                    <option value="curiosity">Simple curiosity</option>
+                    <option value="other-reason">Other</option>
+                </select>
+            </div>
+            <div class="group-form">
+                <p>What would you like to see improved?<span class="help-tip">(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="front-end-projects"
+                        name="user-preference" />Front-end Projects</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="back-end-projects"
+                        name="user-preference" />Back-end Projects</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="full-stack-projects"
+                        name="user-preference" />Full-stack Projects</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="apis-projects" name="user-preference" />APIs
+                    Projects</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="data-visualization" name="user-preference" />Data
+                    Visualization</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="support-community" name="user-preference" />Support
+                    Community</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="videos" name="user-preference" />Videos</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="forum" name="user-preference" />Forum</label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="additional-courses"
+                        name="user-preference" />Additional Courses</label>
+            </div>
+            <div class="group-form">
+                <p>We value your comments and suggestions!</p>
+                <textarea id="comments" class="input-textarea" name="comments"
+                    placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
